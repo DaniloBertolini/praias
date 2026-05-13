@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Descubra as praias incríveis da nossa cidade! Responda o quiz e teste seus conhecimentos.">
+  <title>Praias da Nossa Cidade</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Animated background elements -->
+  <div class="bg-decoration">
+    <div class="wave wave-1"></div>
+    <div class="wave wave-2"></div>
+    <div class="wave wave-3"></div>
+    <div class="bubble bubble-1"></div>
+    <div class="bubble bubble-2"></div>
+    <div class="bubble bubble-3"></div>
+    <div class="bubble bubble-4"></div>
+    <div class="bubble bubble-5"></div>
+  </div>
+
+  <main class="container">
+    <div class="card">
+      <div class="card-glow"></div>
+      
+      <div class="icon-container">
+        <span class="icon">🏖️</span>
+      </div>
+
+      <h1 class="title">Praias da Nossa Cidade</h1>
+      <p class="subtitle">Teste seus conhecimentos sobre as praias mais bonitas da região!</p>
+
+      <div class="form-group">
+        <label for="nome" class="label">Qual é o seu nome?</label>
+        <div class="input-wrapper">
+          <input 
+            type="text" 
+            id="nome" 
+            class="input" 
+            placeholder="Digite seu nome aqui..." 
+            autocomplete="off"
+            maxlength="40"
+          >
+          <span class="input-icon">✨</span>
+        </div>
+      </div>
+
+      <button id="btn-comecar" class="btn" disabled>
+        <span class="btn-text">Começar</span>
+        <span class="btn-arrow">→</span>
+      </button>
+
+      <p class="footer-text">🌊 Prepare-se para uma aventura tropical!</p>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

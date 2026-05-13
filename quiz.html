@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Quiz sobre as praias de São Francisco do Sul. Teste seus conhecimentos!">
+  <title>Quiz — Praias de São Francisco do Sul</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="quiz-style.css">
+</head>
+<body>
+  <!-- Animated background -->
+  <div class="bg-decoration">
+    <div class="wave wave-1"></div>
+    <div class="wave wave-2"></div>
+    <div class="wave wave-3"></div>
+    <div class="bubble bubble-1"></div>
+    <div class="bubble bubble-2"></div>
+    <div class="bubble bubble-3"></div>
+    <div class="bubble bubble-4"></div>
+    <div class="bubble bubble-5"></div>
+  </div>
+
+  <main class="container quiz-container">
+
+    <!-- ===== QUIZ SCREEN ===== -->
+    <div class="card quiz-card" id="quiz-screen">
+      <div class="card-glow"></div>
+
+      <!-- Header -->
+      <div class="quiz-header">
+        <div class="quiz-header-top">
+          <p class="quiz-greeting" id="quiz-greeting">Olá! 👋</p>
+          <span class="bonus-badge hidden" id="bonus-badge">🏆 BÔNUS</span>
+        </div>
+        <div class="progress-bar-wrapper">
+          <div class="progress-bar" id="progress-bar"></div>
+        </div>
+        <p class="progress-text" id="progress-text">Pergunta 1 de 10</p>
+      </div>
+
+      <!-- Question -->
+      <div class="question-area" id="question-area">
+        <h2 class="question-number" id="question-number">1</h2>
+        <p class="question-text" id="question-text"></p>
+      </div>
+
+      <!-- Options -->
+      <div class="options" id="options"></div>
+
+      <!-- Next button -->
+      <button class="btn btn-next" id="btn-next" disabled>
+        <span class="btn-text">Próxima</span>
+        <span class="btn-arrow">→</span>
+      </button>
+    </div>
+
+    <!-- ===== RESULT SCREEN ===== -->
+    <div class="card result-card hidden" id="result-screen">
+      <div class="card-glow"></div>
+
+      <div class="result-icon" id="result-icon">🏆</div>
+      <h2 class="result-title" id="result-title">Parabéns!</h2>
+      <p class="result-name" id="result-name"></p>
+
+      <div class="score-ring-wrapper">
+        <svg class="score-ring" viewBox="0 0 120 120">
+          <circle class="score-ring-bg" cx="60" cy="60" r="52"/>
+          <circle class="score-ring-fill" id="score-ring-fill" cx="60" cy="60" r="52"/>
+        </svg>
+        <div class="score-center">
+          <span class="score-value" id="score-value">0</span>
+          <span class="score-total" id="score-total">/10</span>
+        </div>
+      </div>
+
+      <p class="result-message" id="result-message"></p>
+
+      <div class="result-buttons">
+        <button class="btn btn-bonus hidden" id="btn-bonus">
+          <span class="btn-text">⭐ Questões Extras</span>
+          <span class="btn-arrow">→</span>
+        </button>
+        <button class="btn" id="btn-restart">
+          <span class="btn-text">Jogar Novamente</span>
+          <span class="btn-arrow">🔄</span>
+        </button>
+        <button class="btn btn-secondary" id="btn-home">
+          <span class="btn-text">Início</span>
+          <span class="btn-arrow">🏠</span>
+        </button>
+      </div>
+    </div>
+
+  </main>
+
+  <script src="quiz.js"></script>
+</body>
+</html>
