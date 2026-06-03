@@ -18,7 +18,7 @@ const mainQuestions = [
   {
     question: "Qual praia fica mais próxima do centro histórico de São Francisco do Sul?",
     options: ["Praia do Forte", "Praia da Saudade", "Praia da Enseada"],
-    answer: 1
+    answer: 0
   },
   {
     question: "Qual praia é famosa por sua longa faixa de areia?",
@@ -48,7 +48,7 @@ const mainQuestions = [
   {
     question: "Qual praia é muito usada para pesca artesanal?",
     options: ["Praia do Ervino", "Praia da Enseada", "Praia de Ubatuba"],
-    answer: 2
+    answer: 0
   }
 ];
 
@@ -77,7 +77,7 @@ const bonusQuestions = [
   {
     question: "Qual praia é conhecida pela comunidade pesqueira e frutos do mar?",
     options: ["Praia do Calixto", "Praia de Itaguaçu", "Praia do Capri"],
-    answer: 1
+    answer: 0
   }
 ];
 

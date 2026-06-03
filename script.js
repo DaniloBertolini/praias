@@ -19,7 +19,6 @@ inputNome.addEventListener('keydown', (e) => {
 btnComecar.addEventListener('click', () => {
   const nome = inputNome.value.trim();
   if (nome) {
-    // Save name to localStorage so the quiz page can use it
     localStorage.setItem('nomeUsuario', nome);
     window.location.href = 'quiz.html';
   }
