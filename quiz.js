@@ -255,12 +255,8 @@ function showResult() {
     // Main quiz result
     mainScore = score;
 
-    // Show bonus button if score >= 9
-    if (score >= 9) {
-      btnBonus.classList.remove('hidden');
-    } else {
-      btnBonus.classList.add('hidden');
-    }
+    // Show bonus button
+    btnBonus.classList.remove('hidden');
 
     if (percentage === 100) {
       resultIcon.textContent = '👑';
